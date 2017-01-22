@@ -81,7 +81,9 @@
         current_element.style.position = "";
         current_element.style.zIndex = "";
 
+        // Update Current Step
         current_step = next_step;
+
         // Loop through story_board keys
         for (var key in story_board) {
             if (key == current_step) {
@@ -101,7 +103,7 @@
         }
     }
 
-    // Finsih Tour
+    // Finish Tour
     function finishTour(current_element) {
         modal_footer.innerHTML = "<div id=\"finish-btn\" class=\"mf-modal-footer-primary-btn\">FINISHED</div>";
         document.getElementById('finish-btn').addEventListener('click', function() {
@@ -377,9 +379,9 @@
 <!--MODAL-->
 <div id="mf-modal-wrap" class="mf-modal-wrap">
     <div id="mf-modal-container" class="mf-modal-container">
-        <div id="mf-modal-header" class="mf-modal-header"><!-- For Header use h3 Tag and add Close Modal Button '<div id="mf-modal-close" class="mf-modal-close">&times;</div>' --></div>
+        <div id="mf-modal-header" class="mf-modal-header"></div>
         <div id="mf-modal-body" class="mf-modal-body"></div>
-        <div id="mf-modal-footer" class="mf-modal-footer"><!-- For Button styles use class name 'mf-modal-footer-btn' --></div>
+        <div id="mf-modal-footer" class="mf-modal-footer"></div>
     </div>
 </div>
 <!--/MODAL-->
